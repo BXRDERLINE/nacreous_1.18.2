@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "nacreous",
+  "version": "${version}",
+
+  "name": "Nacreous",
+  "description": "Test mod",
+  "authors": [
+    "BXRDERLINE"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.bxrderline.nacreous.Nacreous"
+    ],
+    "client": [
+      "net.bxrderline.nacreous.NacreousClient"
+    ]
+  },
+  "mixins": [
+    "nacreous.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
